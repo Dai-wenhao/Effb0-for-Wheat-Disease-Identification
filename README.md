@@ -1,4 +1,4 @@
-# Improved EfficientNet-B0 + SKB + GeM for Wheat Disease Identification
+# ENGS: An Novel Deep Learning Model for Wheat Leaf Disease Identification
 
 官方 PyTorch 实现 | 论文标题：《ENGS: An Novel Deep Learning Model for Wheat Leaf Disease Identification》
 
