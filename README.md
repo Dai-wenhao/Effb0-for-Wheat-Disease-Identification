@@ -1,6 +1,6 @@
 # Improved EfficientNet-B0 + SKB + GeM for Wheat Disease Identification
 
-官方 PyTorch 实现 | 论文标题：《A Deep Learning Model for Wheat Leaf Disease Recognition Based on Improved EfficientNet-B0 with GeM and SKBlock Attention Mechanism》
+官方 PyTorch 实现 | 论文标题：《ENGS: An Novel Deep Learning Model for Wheat Leaf Disease Identification》
 
 
 本文提出一种基于改进 EfficientNet-B0 并融合广义均值池化（GeM）与选择性核注意力（SKBlock）的小麦叶片病害识别模型，实现了对白粉病、叶锈病、斑枯病、黄叶斑病及健康叶片的高精度分类，为田间病害智能诊断提供高效轻量化解决方案。
