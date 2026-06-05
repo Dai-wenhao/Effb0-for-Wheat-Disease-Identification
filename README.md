@@ -115,7 +115,7 @@ python predict.py \
 ##6.3 预训练权重
 提供基于 WPLDD 数据集训练完成的最优权重，可直接用于预测或微调。除随项目仓库附带的权重外，也可通过百度网盘获取完整权重文件：
 
-百度网盘分享： 链接: https://pan.baidu.com/s/1OG8uLUL0_OQL-BaDWNEhmA 提取码: 4ycx （复制这段内容后打开百度网盘手机 App，操作更方便） 本地权重文件：weights/best_hh_former.pth（若仓库内权重存在大小限制，可通过上述网盘链接获取完整版本）； 适用场景：仅针对小麦叶片的 “白粉病、枯萎病、叶锈病、斑枯病、健康叶片” 五类分类，若需扩展其他小麦病害，建议基于此权重微调（冻结浅层注意力模块，仅训练分类头与深层特征融合层，可减少 50% 以上训练数据量）。
+百度网盘分享： 链接: https://pan.baidu.com/s/1OG8uLUL0_OQL-BaDWNEhmA  本地权重文件：weights/best_hh_former.pth（若仓库内权重存在大小限制，可通过上述网盘链接获取完整版本）； 适用场景：仅针对小麦叶片的 “白粉病、枯萎病、叶锈病、斑枯病、健康叶片” 五类分类，若需扩展其他小麦病害，建议基于此权重微调（冻结浅层注意力模块，仅训练分类头与深层特征融合层，可减少 50% 以上训练数据量）。
 
 #7. 项目文件结构
 ```
@@ -132,6 +132,7 @@ Wheat-EfficientNet-SKB-GeM/
 ├── evaluate.py           # 评估脚本
 └── README.md
 ```
+
 #8. 注意事项
 当前模型针对 WPLDD 五类病害，扩展类别需重新训练或微调。
 输入图像建议分辨率 ≥256×256，低分辨率可能影响小病斑识别。
@@ -140,13 +141,14 @@ Wheat-EfficientNet-SKB-GeM/
 #9. 引用与联系方式
 ##9.1 引用方式
 论文处于投刊阶段，正式发表后将更新BibTeX引用格式，当前可临时引用：
-
+```
 @article{improved_efficientnet_wheat,
   title={A Deep Learning Model for Wheat Leaf Disease Recognition Based on Improved EfficientNet-B0 with GeM and SKBlock Attention Mechanism},
   author={Xu, Laixiang and Dai, Wenhao and Bijani, Madineh and Ahmad, Mohammad Nazir and Liu, Jia and Zhao, Junmin},
   journal={Submitted},
   year={2026}
 }
+```
 ##9.2 联系方式
 若遇到代码运行问题或学术交流需求，请联系：
 
