@@ -82,7 +82,7 @@ pip install scikit-learn thop tensorboard statsmodels
 | + GeM | 3.110 | 0.363 | 0.63 | 98.02% |
 | + SKBlock + GeM（本文 ENGS） | 3.417 | 0.383 | 0.98 | 98.81%* |
 
-> 注：带 * 的准确率为论文报告值（Manuscript under review），对应配置的复现实验正在进行，完成后将以实测值更新本表。不带 * 的为基于本仓库权重在测试集（1516 张）上的实测值。Latency 以 batch size 32 在 RTX 4060 Laptop GPU 上测得。
+> 注：带 * 的准确率为原实验在修订前的模型实现上取得的结果（论文报告值，Manuscript under review）。论文投稿后模型实现经过了修订，为保持代码与论文一致，目前正基于修订后的代码重新复现各配置，完成后将以复现实测值更新本表。不带 * 的为基于本仓库当前权重在测试集（1516 张）上的实测值。Latency 以 batch size 32 在 RTX 4060 Laptop GPU 上测得。
 
 ### 5.2 统计显著性检验
 
